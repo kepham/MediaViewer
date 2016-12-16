@@ -11,10 +11,33 @@
     Loaded="MainWindow_Loaded"
     mc:Ignorable="d">
     <DockPanel>
-        <Button
-            Click="Header_Click"
-            Content="Media Player"
-            DockPanel.Dock="Top" />
+        <StackPanel
+            Margin="0,0,0,8"
+            DockPanel.Dock="Top"
+            Orientation="Horizontal">
+            <Button Click="Header_Click" Content="Return to Main Menu" />
+            <Canvas>
+                <Ellipse
+                    Canvas.Top="5"
+                    Width="20"
+                    Height="20"
+                    Fill="{StaticResource redBrush}" />
+                <Ellipse
+                    Canvas.Left="6"
+                    Canvas.Top="5"
+                    Width="20"
+                    Height="20"
+                    Fill="{StaticResource orangeBrush}" />
+                <Ellipse
+                    Canvas.Left="12"
+                    Canvas.Top="5"
+                    Width="20"
+                    Height="20"
+                    Fill="{StaticResource yellowBrush}" />
+            </Canvas>
+            <TextBlock VerticalAlignment="Center" Text="Media Viewer" />
+        </StackPanel>
+
         <ContentControl x:Name="currentView" />
     </DockPanel>
 </Window>

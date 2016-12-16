@@ -40,7 +40,7 @@ namespace MediaViewer.Model
                 BitmapCacheOption.None
                 );
             _thumbnail = decoder.Frames[0];
-            Application.Current.Dispatcher.Invoke(
+            Application.Current. Dispatcher.Invoke(
                 DispatcherPriority.Normal,
                 (Action)delegate { OnPropertyChanged("Thumbnail"); }
                 );
