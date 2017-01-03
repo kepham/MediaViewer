@@ -35,7 +35,6 @@
         B="165"
         G="240"
         R="255" />
-
     <SolidColorBrush x:Key="yellowBrush" Color="{StaticResource yellowColor}" />
     <SolidColorBrush x:Key="orangeBrush" Color="{StaticResource orangeColor}" />
     <SolidColorBrush x:Key="redBrush" Color="{StaticResource redColor}" />
@@ -43,7 +42,7 @@
     <SolidColorBrush x:Key="bgBrush" Color="{StaticResource bgColor}" />
     <SolidColorBrush x:Key="paleBrush" Color="{StaticResource paleColor}" />
     <SolidColorBrush x:Key="glossOutline" Color="#99FFFFFF" />
-    <SolidColorBrush x:Key="chromeOutline" Color="#99808080" />
+    <SolidColorBrush x:Key="chromeOutline" Color="#FF808080" />
     <SolidColorBrush x:Key="controlOutline" Color="#FF333333" />
     <LinearGradientBrush x:Key="yellowGradient" StartPoint="0.5,0" EndPoint="0.5,1">
         <GradientStop Offset="0.4" Color="{StaticResource yellowColor}" />
@@ -53,7 +52,6 @@
         <GradientStop Offset="0" Color="#00FFFFFF" />
         <GradientStop Offset="1" Color="#66FFFFFF" />
     </LinearGradientBrush>
-
     <RadialGradientBrush x:Key="redRadial" GradientOrigin="0.45,0.30">
         <RadialGradientBrush.RelativeTransform>
             <TranslateTransform X="-0.2" Y="-0.2" />
@@ -61,7 +59,6 @@
         <GradientStop Offset="0" Color="{StaticResource orangeColor}" />
         <GradientStop Offset="1" Color="{StaticResource redColor}" />
     </RadialGradientBrush>
-
     <LinearGradientBrush x:Key="chromeBrush" SpreadMethod="Repeat" StartPoint="0.73,-0.053" EndPoint="0.341,0.967">
         <GradientStop Offset="0.54" Color="#FF727272" />
         <GradientStop Offset="1" Color="#FFFFFFFF" />
@@ -73,7 +70,6 @@
         <GradientStop Offset="0.90" Color="#FF858585" />
         <GradientStop Offset="0.61" Color="#FFFFFFF2" />
     </LinearGradientBrush>
-
     <DrawingBrush x:Key="MediaControlPanelBackground" Stretch="UniformToFill">
         <DrawingBrush.Drawing>
             <DrawingGroup>
@@ -107,14 +103,15 @@
             </DrawingGroup>
         </DrawingBrush.Drawing>
     </DrawingBrush>
-
+    <ImageBrush x:Key="imageBrush" ImageSource="1.jpg" />
+    <ImageBrush x:Key="brush_2" ImageSource="2.jpg" />
+    <ImageBrush x:Key="brush_3" ImageSource="3.jpg" />
     <LinearGradientBrush x:Key="mediaButtonHover" StartPoint="0.5,0" EndPoint="0.5,1">
         <GradientStop Offset="0" Color="#C0FFFFFF" />
         <GradientStop Offset="0.33" Color="#00FFFFFF" />
         <GradientStop Offset="0.66" Color="#00FFFFFF" />
         <GradientStop Offset="1" Color="#C0FFFFFF" />
     </LinearGradientBrush>
-
     <LinearGradientBrush x:Key="sliderBg" StartPoint="0.5,0" EndPoint="0.5,1">
         <GradientStop Offset="0" Color="{StaticResource redColor}" />
         <GradientStop Offset="0.5" Color="{StaticResource orangeColor}" />
